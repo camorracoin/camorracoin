@@ -1,0 +1,2 @@
+debian/bin/camorracoind usr/bin
+src/camorracoind usr/lib/camorracoin
