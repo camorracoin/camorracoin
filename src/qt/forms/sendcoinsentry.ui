@@ -7,11 +7,17 @@
     <x>0</x>
     <y>0</y>
     <width>729</width>
-    <height>136</height>
+    <height>142</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #000000;
+	color: #FFFFFF;
+}</string>
   </property>
   <property name="frameShape">
    <enum>QFrame::StyledPanel</enum>
@@ -50,7 +56,19 @@
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="BitcoinAmountField" name="payAmount"/>
+    <widget class="BitcoinAmountField" name="payAmount">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+     </property>
+    </widget>
    </item>
    <item row="4" column="1">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -64,6 +82,17 @@
        </property>
        <property name="toolTip">
         <string>Enter a label for this address to add it to your address book</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
        </property>
       </widget>
      </item>
@@ -84,17 +113,25 @@
    </item>
    <item row="5" column="1">
     <widget class="QValidatedLineEdit" name="narration">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="toolTip">
-        <string>Enter a short note to send with payment (max 24 characters)</string>
-       </property>
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="toolTip">
+      <string>Enter a short note to send with payment (max 24 characters)</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+     </property>
     </widget>
-    
    </item>
-   
-   
    <item row="4" column="0">
     <widget class="QLabel" name="label_4">
      <property name="text">
@@ -118,6 +155,17 @@
        <property name="toolTip">
         <string>The address to send the payment to  (e.g. SXywGBZBowrppUwwNUo1GCRDTibzJi7g2M)</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+       </property>
        <property name="maxLength">
         <number>34</number>
        </property>
@@ -127,6 +175,25 @@
       <widget class="QToolButton" name="addressBookButton">
        <property name="toolTip">
         <string>Choose address from address book</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+     border: 2px solid #8f8f91;
+     border-radius: 6px;
+     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.0511364 rgba(77, 77, 77, 255));
+     min-width:20px;
+     min-height: 20px;
+     color: #fff;
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QToolButton:flat {
+     border: none; /* no border for a flat push button */
+ }</string>
        </property>
        <property name="text">
         <string/>
@@ -145,6 +212,25 @@
        <property name="toolTip">
         <string>Paste address from clipboard</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+     border: 2px solid #8f8f91;
+     border-radius: 6px;
+     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.0511364 rgba(77, 77, 77, 255));
+     min-width:20px;
+     min-height: 20px;
+     color: #fff;
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QToolButton:flat {
+     border: none; /* no border for a flat push button */
+ }</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -161,6 +247,25 @@
       <widget class="QToolButton" name="deleteButton">
        <property name="toolTip">
         <string>Remove this recipient</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+     border: 2px solid #8f8f91;
+     border-radius: 6px;
+     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.0511364 rgba(77, 77, 77, 255));
+     min-width:20px;
+     min-height: 20px;
+     color: #fff;
+ }
+
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+ }
+
+ QToolButton:flat {
+     border: none; /* no border for a flat push button */
+ }</string>
        </property>
        <property name="text">
         <string/>

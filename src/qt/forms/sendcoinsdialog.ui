@@ -674,6 +674,36 @@ QDialogButtonBox {
           </property>
           <item>
            <widget class="QCheckBox" name="checkBoxCoinControlChange">
+            <property name="styleSheet">
+             <string notr="true">QAbstractButton {
+	color: #FFFFFF;
+}
+QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+            </property>
             <property name="text">
              <string>custom change address</string>
             </property>
@@ -689,6 +719,17 @@ QDialogButtonBox {
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
             </property>
            </widget>
           </item>
@@ -745,7 +786,7 @@ QDialogButtonBox {
         <x>0</x>
         <y>0</y>
         <width>830</width>
-        <height>153</height>
+        <height>168</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">

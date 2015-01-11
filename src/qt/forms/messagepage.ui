@@ -127,7 +127,10 @@
       <string>Click on a message to view it</string>
      </property>
      <property name="styleSheet">
-      <string notr="true"/>
+      <string notr="true">QFrame {
+	background-color: #000000;
+	color: #FFFFFF;
+}</string>
      </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
@@ -242,7 +245,10 @@ QDialogButtonBox {
            <bool>false</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">QFrame {
+	background-color: #000000;
+	color: #FFFFFF;
+}</string>
           </property>
          </widget>
         </item>

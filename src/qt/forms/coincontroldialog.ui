@@ -517,6 +517,32 @@ QDialogButtonBox {
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton {
+	color: #FFFFFF;
+}
+QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+         </property>
          <property name="text">
           <string>Tree mode</string>
          </property>
@@ -532,6 +558,32 @@ QDialogButtonBox {
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton {
+	color: #FFFFFF;
+}
+QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
          </property>
          <property name="text">
           <string>List mode</string>

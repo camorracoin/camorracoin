@@ -1,3 +1,4 @@
+############################
 TEMPLATE = app
 TARGET = camorracoin-qt
 VERSION = 2.1.1.1

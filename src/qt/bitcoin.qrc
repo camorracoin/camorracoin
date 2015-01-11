@@ -49,6 +49,8 @@
         <file alias="splash">res/images/splash.png</file>
         <file>res/images/splash_testnet.png</file>
         <file>res/images/Wallet_Logo.png</file>
+        <file alias="checkbox_checked">res/images/checkbox_checked.png</file>
+        <file alias="checkbox_unchecked">res/images/checkbox_unchecked.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

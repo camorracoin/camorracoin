@@ -150,8 +150,15 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(messagePage);
     setCentralWidget(centralWidget);
 
+    centralWidget->setStyleSheet("QStackedWidget {background-color: #000000;}");
+    receiveCoinsPage->setStyleSheet("QTableView {background-color: #34373E; color: #FFFFFF; selection-background-color: #B3B6BD; selection-color: #000000; alternate-background-color: #34373E;}");
+    sendCoinsPage->setStyleSheet("QWidget {background-color: #000000; color: #FFFFFF;}");
+    transactionsPage->setStyleSheet("QWidget {background-color: #000000; color: #FFFFFF;} QTableView {background-color: #34373E; color: #FFFFFF; selection-background-color: #B3B6BD; selection-color: #000000; alternate-background-color: #34373E;}");
+
+
     // Create status bar
     statusBar();
+    statusBar()->setStyleSheet("QStatusBar {background-color: #34373E;}");
 
     // Status bar notification icons
     QFrame *frameBlocks = new QFrame();

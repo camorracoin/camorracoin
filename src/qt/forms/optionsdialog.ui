@@ -124,6 +124,10 @@
 }
 QTabBar::tab:selected {
 	background-color: #676A71;
+}
+QWidget {
+	background-color: #000000;
+	color: #FFFFFF;
 }</string>
      </property>
      <property name="tabPosition">
@@ -166,7 +170,19 @@ QTabBar::tab:selected {
           </widget>
          </item>
          <item>
-          <widget class="BitcoinAmountField" name="transactionFee"/>
+          <widget class="BitcoinAmountField" name="transactionFee">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+           </property>
+          </widget>
          </item>
          <item>
           <spacer name="horizontalSpacerFee">
@@ -212,7 +228,19 @@ QTabBar::tab:selected {
           </widget>
          </item>
          <item>
-          <widget class="BitcoinAmountField" name="reserveBalance"/>
+          <widget class="BitcoinAmountField" name="reserveBalance">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+           </property>
+          </widget>
          </item>
          <item>
           <spacer name="horizontalSpacerReserveBalance">
@@ -234,6 +262,33 @@ QTabBar::tab:selected {
          <property name="toolTip">
           <string>Automatically start Camorracoin after logging in to the system.</string>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+         </property>
          <property name="text">
           <string>&amp;Start Camorracoin on system login</string>
          </property>
@@ -243,6 +298,33 @@ QTabBar::tab:selected {
         <widget class="QCheckBox" name="detachDatabases">
          <property name="toolTip">
           <string>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
          </property>
          <property name="text">
           <string>&amp;Detach databases at shutdown</string>
@@ -274,6 +356,33 @@ QTabBar::tab:selected {
          <property name="toolTip">
           <string>Automatically open the Camorracoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+         </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
          </property>
@@ -283,6 +392,33 @@ QTabBar::tab:selected {
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
           <string>Connect to the Camorracoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
@@ -315,6 +451,17 @@ QTabBar::tab:selected {
            <property name="toolTip">
             <string>IP address of the proxy (e.g. 127.0.0.1)</string>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
+           </property>
           </widget>
          </item>
          <item>
@@ -340,6 +487,17 @@ QTabBar::tab:selected {
            </property>
            <property name="toolTip">
             <string>Port of the proxy (e.g. 9050)</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+	background-color: #34373E;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFFF;
+	border-radius: 4px;
+}
+QLineEdit:hover {
+	background-color: #676A71;
+}</string>
            </property>
           </widget>
          </item>
@@ -403,6 +561,33 @@ QTabBar::tab:selected {
          <property name="toolTip">
           <string>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</string>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+         </property>
          <property name="text">
           <string>M&amp;inimize on close</string>
          </property>
@@ -412,6 +597,33 @@ QTabBar::tab:selected {
         <widget class="QCheckBox" name="minimizeToTray">
          <property name="toolTip">
           <string>Show only a tray icon after minimizing the window.</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
          </property>
          <property name="text">
           <string>&amp;Minimize to the tray instead of the taskbar</string>
@@ -491,6 +703,33 @@ QTabBar::tab:selected {
          <property name="toolTip">
           <string>Whether to show Camorracoin addresses in the transaction list or not.</string>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
+         </property>
          <property name="text">
           <string>&amp;Display addresses in transaction list</string>
          </property>
@@ -500,6 +739,33 @@ QTabBar::tab:selected {
         <widget class="QCheckBox" name="coinControlFeatures">
          <property name="toolTip">
           <string>Whether to show coin control features or not.</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QAbstractButton::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:unchecked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_unchecked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }
+QCheckBox::indicator:checked {
+	border: 1px solid #FFFFFF;
+	border-image: url(:/images/checkbox_checked) 0 0 0 0 stretch stretch;
+	background-position: 0px 0px;
+ }</string>
          </property>
          <property name="text">
           <string>Display coin &amp;control features (experts only!)</string>
@@ -669,15 +935,15 @@ QDialogButtonBox {
  </widget>
  <customwidgets>
   <customwidget>
-   <class>BitcoinAmountField</class>
-   <extends>QSpinBox</extends>
-   <header>bitcoinamountfield.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>QValidatedLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qvalidatedlineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BitcoinAmountField</class>
+   <extends>QLineEdit</extends>
+   <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>

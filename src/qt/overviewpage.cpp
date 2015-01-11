@@ -99,7 +99,9 @@ OverviewPage::OverviewPage(QWidget *parent) :
     txdelegate(new TxViewDelegate()),
     filter(0)
 {
+    this->setStyleSheet("QMainWindow {background-color: #000000;}");
     ui->setupUi(this);
+
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
